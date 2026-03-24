@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: application-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/application_db
+    username: root
+    password: Shivraj@123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+services:
+  auth-service:
+    url: http://localhost:8081
