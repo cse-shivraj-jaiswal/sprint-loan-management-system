@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: API-GATEWAY
+
+  config:
+    import: optional:configserver:http://localhost:8888
+
+# 🌍 EUREKA (Local fallback)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# 📄 SWAGGER (Local fallback in case config server fails)
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    # 🔥 This will force it to be hidden locally
+    display-operation-id: false

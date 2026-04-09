@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: notification-service
+  cloud:
+    config:
+      uri: http://config-server:8888
+      fail-fast: false
+    bootstrap:
+      enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-server:8761/eureka/

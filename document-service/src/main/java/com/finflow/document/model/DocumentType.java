@@ -1,0 +1,29 @@
+package com.finflow.document.model;
+
+public enum DocumentType {
+
+    // COMMON
+    AADHAR,
+    PAN,
+    ADDRESS_PROOF,
+    INCOME_PROOF,
+
+    // EDUCATION LOAN
+    STUDENT_ID,
+    ADMISSION_LETTER,
+
+    // HOME LOAN
+    PROPERTY_DOCUMENT,
+    LAND_REGISTRATION,
+    SALARY_SLIP,
+
+    // BUSINESS LOAN
+    GST_CERTIFICATE,
+    BUSINESS_PROOF,
+
+    // VEHICLE LOAN
+    VEHICLE_QUOTATION,
+
+    // MARRIAGE LOAN
+    MARRIAGE_PROOF
+}
